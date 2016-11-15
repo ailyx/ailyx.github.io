@@ -96,7 +96,7 @@ ECMAScript，由ECMA-262定义，提供核心语言功能；
 ECMAScript，由ECMA-262定义，提供核心语言功能；
 文档对象模型（DOM），提供访问和操作网页内容的方法和接口；
 浏览器对象模型（BOM），提供与浏览器交互的方法和接口。二、在HTML使用JavaScript1、在html中使用的两种方法直接在页面中嵌入JavaScript代码和包含外部 JavaScript文件。 。与解析嵌入式 JavaSc">
-<meta property="og:updated_time" content="2016-11-15T12:15:43.474Z">
+<meta property="og:updated_time" content="2016-11-15T12:18:08.824Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript基础核心（一）">
 <meta name="twitter:description" content="一、JavaScript由三部分组成：
@@ -316,7 +316,7 @@ ECMAScript，由ECMA-262定义，提供核心语言功能；
         <h2 id="一、JavaScript由三部分组成："><a href="#一、JavaScript由三部分组成：" class="headerlink" title="一、JavaScript由三部分组成："></a>一、JavaScript由三部分组成：</h2><ul>
 <li>ECMAScript，由ECMA-262定义，提供核心语言功能；</li>
 <li>文档对象模型（DOM），提供访问和操作网页内容的方法和接口；</li>
-<li>浏览器对象模型（BOM），提供与浏览器交互的方法和接口。<h2 id="二、在HTML使用JavaScript"><a href="#二、在HTML使用JavaScript" class="headerlink" title="二、在HTML使用JavaScript"></a>二、在HTML使用JavaScript</h2>1、在html中使用的两种方法直接在页面中嵌入JavaScript代码和包含外部 JavaScript文件。 <script type="text/javascript" src="example.js"></script>。与解析嵌入式 JavaScript 代码一样，在解析外部 JavaScript 文件（包括下载该文件）时，页面的处理也会暂时停止。<br>2、延迟脚本：<code>&lt;script type=&quot;text/javascript&quot; defer=&quot;defer&quot; src=&quot;example1.js&quot;&lt;/script&gt;</code><br>3、异步脚本：HTML5 为<script>元素定义了async属性。<code>&lt;script type=&quot;text/javascript&quot; async src=&quot;example1.js&quot;&gt;&lt;/script&gt;</code><br>4、<code>&lt;noscript&gt;</code>元素。<noscript>元素中的内容只有在下列情况下才会显示出来：浏览器不支持脚本；浏览器支持脚本，但脚本被禁用。<a id="more"></a>
+<li>浏览器对象模型（BOM），提供与浏览器交互的方法和接口。<h2 id="二、在HTML使用JavaScript"><a href="#二、在HTML使用JavaScript" class="headerlink" title="二、在HTML使用JavaScript"></a>二、在HTML使用JavaScript</h2>1、在html中使用的两种方法直接在页面中嵌入JavaScript代码和包含外部 JavaScript文件。 <script type="text/javascript" src="example.js"></script>。与解析嵌入式 JavaScript 代码一样，在解析外部 JavaScript 文件（包括下载该文件）时，页面的处理也会暂时停止。<br>2、延迟脚本：<code>&lt;script type=&quot;text/javascript&quot; defer=&quot;defer&quot; src=&quot;example1.js&quot;&lt;/script&gt;</code><br>3、异步脚本：HTML5为<script>元素定义了async属性：<br><code>&lt;script type=&quot;text/javascript&quot; async src=&quot;example1.js&quot;&gt;&lt;/script&gt;</code><br>4、<code>&lt;noscript&gt;</code>元素。<noscript>元素中的内容只有在下列情况下才会显示出来：浏览器不支持脚本；浏览器支持脚本，但脚本被禁用。<a id="more"></a>
 <h2 id="三、基本语法"><a href="#三、基本语法" class="headerlink" title="三、基本语法"></a>三、基本语法</h2>3.1.1、Javascript区分大小写。<br>3.1.2、标识符是指变量、函数、属性的名字，或者函数的参数，而且标识符第一个字符必须是字母或者下划线__或者美元符号$，其他的字符可以是数字和字母。一般javascript采用的是驼峰命名法。不能把关键字、保留字当作标识符。其实标识符就是一些名字而已。<br>3.1.3、严格模式，在第五版中引入严格模式，如果要在整个脚本中加入严格模式，只要在脚本最上面加上”use strict”，如果只想在函数中启用严格模式，只需要在函数中加上”use strict”.<br>3.1.4、语句：一般语句结束最好加上分号;把多条语句用花括号包起来。<br>3.2、关键字和保留字：关键字就是表示种控制语句的开始或者结束或执行特定的操作的单词。保留字是js保留起来的关键字，这些字都不能用作变量的名字。</li>
 </ul>
 <p><strong>3.3、变量</strong><br>变量是指储存数据类型的，一般声明变量和初始化一起，var b=10;这个意思是声明一个变量b并且使她的值等于10，而且使用var声明的变量是局部变量。如果在函数这var一个变量，那么这个函数执行完毕，这个变量就会销毁。</p>
