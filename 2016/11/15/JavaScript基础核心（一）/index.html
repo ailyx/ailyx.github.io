@@ -84,12 +84,25 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leo的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="一、JavaScript由三部分组成：
+ECMAScript，由ECMA-262定义，提供核心语言功能；
+文档对象模型（DOM），提供访问和操作网页内容的方法和接口；
+浏览器对象模型（BOM），提供与浏览器交互的方法和接口。##二、在HTML使用JavaScript1、在html中使用的两种方法直接在页面中嵌入JavaScript代码和包含外部 JavaScript文件。 。与解析嵌入式 Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript基础核心（一）">
+<meta property="og:url" content="http://yoursite.com/2016/11/15/JavaScript基础核心（一）/index.html">
 <meta property="og:site_name" content="Leo的博客">
+<meta property="og:description" content="一、JavaScript由三部分组成：
+ECMAScript，由ECMA-262定义，提供核心语言功能；
+文档对象模型（DOM），提供访问和操作网页内容的方法和接口；
+浏览器对象模型（BOM），提供与浏览器交互的方法和接口。##二、在HTML使用JavaScript1、在html中使用的两种方法直接在页面中嵌入JavaScript代码和包含外部 JavaScript文件。 。与解析嵌入式 Java">
+<meta property="og:updated_time" content="2016-11-15T12:10:25.163Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leo的博客">
+<meta name="twitter:title" content="JavaScript基础核心（一）">
+<meta name="twitter:description" content="一、JavaScript由三部分组成：
+ECMAScript，由ECMA-262定义，提供核心语言功能；
+文档对象模型（DOM），提供访问和操作网页内容的方法和接口；
+浏览器对象模型（BOM），提供与浏览器交互的方法和接口。##二、在HTML使用JavaScript1、在html中使用的两种方法直接在页面中嵌入JavaScript代码和包含外部 JavaScript文件。 。与解析嵌入式 Java">
 
 
 
@@ -110,10 +123,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/15/JavaScript基础核心（一）/"/>
 
 
-  <title> Leo的博客 </title>
+  <title> JavaScript基础核心（一） | Leo的博客 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -134,9 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -233,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -255,10 +266,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/11/15/JavaScript基础核心（一）/" itemprop="url">
-                  JavaScript基础核心（一）
-                </a>
+                JavaScript基础核心（一）
               
             
           </h1>
@@ -305,9 +313,7 @@
       
 
       
-        
-          
-            <h2 id="一、JavaScript由三部分组成："><a href="#一、JavaScript由三部分组成：" class="headerlink" title="一、JavaScript由三部分组成："></a>一、JavaScript由三部分组成：</h2><ul>
+        <h2 id="一、JavaScript由三部分组成："><a href="#一、JavaScript由三部分组成：" class="headerlink" title="一、JavaScript由三部分组成："></a>一、JavaScript由三部分组成：</h2><ul>
 <li>ECMAScript，由ECMA-262定义，提供核心语言功能；</li>
 <li>文档对象模型（DOM），提供访问和操作网页内容的方法和接口；</li>
 <li>浏览器对象模型（BOM），提供与浏览器交互的方法和接口。<br>##二、在HTML使用JavaScript<br>1、在html中使用的两种方法直接在页面中嵌入JavaScript代码和包含外部 JavaScript文件。 <script type="text/javascript" src="example.js"></script>。与解析嵌入式 JavaScript 代码一样，在解析外部 JavaScript 文件（包括下载该文件）时，页面的处理也会暂时停止。<br>2、延迟脚本：<code>&lt;script type=&quot;text/javascript&quot; defer=&quot;defer&quot; src=&quot;example1.js&quot;&lt;/script&gt;</code><br>3、异步脚本：HTML5 为<script>元素定义了async属性。<code>&lt;script type=&quot;text/javascript&quot; async src=&quot;example1.js&quot;&gt;&lt;/script&gt;</code><br>4、 <code>&lt;noscript&gt;</code>元素。<noscript>元素中的内容只有在下列情况下才会显示出来：浏览器不支持脚本；浏览器支持脚本，但脚本被禁用。<h2 id="三、基本语法"><a href="#三、基本语法" class="headerlink" title="三、基本语法"></a>三、基本语法</h2>3.1.1、Javascript区分大小写。<br>3.1.2、标识符是指变量、函数、属性的名字，或者函数的参数，而且标识符第一个字符必须是字母或者下划线__或者美元符号$，其他的字符可以是数字和字母。一般javascript采用的是驼峰命名法。不能把关键字、保留字当作标识符。其实标识符就是一些名字而已。<br>3.1.3、严格模式，在第五版中引入严格模式，如果要在整个脚本中加入严格模式，只要在脚本最上面加上”use strict”，如果只想在函数中启用严格模式，只需要在函数中加上”use strict”.<br>3.1.4、语句：一般语句结束最好加上分号;把多条语句用花括号包起来。<br>3.2、关键字和保留字：关键字就是表示种控制语句的开始或者结束或执行特定的操作的单词。保留字是js保留起来的关键字，这些字都不能用作变量的名字。</li>
@@ -316,16 +322,20 @@
 <p><strong>3.4、数据类型</strong><br>在第五版中规定了6中数据类型：Number，String，Boolean，Null，Undefined，Object，前面五个也叫基本类型，最后的是复杂数据类型，注意说数据类型的时候，他们的头字母都是大写的。用typeof操作符来操作返回的字符串头字母都是小写的。<br>3.4.1、Undefined数据类型<br>只有一个值，即undefined，一般这个没啥用，当程序检测出来这个就表示程序出问题了。<br>3.4.2、Null数据类型<br>返回的是一个字符串null，值也只有一个：null，这个一般是变量如果以后用于保存对象，那么先初始化变量为null<br>3.4.3、Boolean数据类型<br> typeof 返回的是”boolean”,他有两个值，ture,false。但是他们和数字1，0不一定是相等的，因为是不同的数字类型，如果通过隐式转换可能是相等的。而且ture和false是区分大小写的。任何一个数可以通过Boolean()函数来转换成布尔值。转换的规则是任何非空字符串转换成ture，空字符串转换成false。任何非0的数字转换成true，0和NaN转换成false。任何对象转换成ture，null转换成false。undefined转换成false。<br>3.4.4、Number数据类型<br>（1）最基本的是十进制，就是一般的整数，比如55，当然还可以用八进制来表示，八进制第一位是必须是0，然后是八进制的数字（0-7），如果超过则解析成十进制，比如078，因为8超过了，所以js解析成78，但是在严格模式下八进制是无效的，会报错。十六进制是以0x开头的，后面跟任何十六进制数（0-9及 A-F），在进行数字运算的时候，最后都要换算成十进制。<br>（2）八进制转换成十进制 比如八进制12=1*8  ，从左到右降序。<br>将十进制数115转化为八进制数 ，除以8。8| 115…… 3 ，8| 14 …… 6 ，8| 1 …… 1 ，结果：（115）10 = （163）8<br>16进制的20表示成10进制就是：2×16¹+0×16º=32，也是从左到右降序。<br>采余数定理分解，例如将487710转成十六进制：<br>487710÷16=30481….14(E)<br>30481÷16=1905….1<br>1905÷16=119….1<br>119÷16=7….7<br>7÷16=0….7<br>这样就计到487710（10）=7711E（16）<br>（3）浮点数：就是小数，浮点数的内存占用整数的两倍，所以js会把浮点数转化成整数。<br>（4）指数表示方法：1e1或者1e+1等表示1后面1个0，如果是1e+7，表示1后面7个0。同理如果是个减号，则是数字前面多少个0，3e-10，表示3前面有10个0.<br>（5）js中最小值保存在Number_MIN_VSLUE中，大多数浏览器中这个值是5e-324，最大值保存在Number_MAX_VALUE中，大多数中这个值是1e+308，如果超过这两个数，则是Infinity和-Infinity，判断一个数是不是有穷的用isFinite(),如果是则返回ture。<br>（6）NaN，是数字类型的非数字，不合任何人相等包括踏自己。任何与NaN操作都会返回NaN，0/0会得到NaN。isNaN()函数是讨厌数字的，如果是数字则返回false。<br>（7）Number(),可以把任何数据类型转换成数值，规则是，布尔值ture转换成1，false转换成0.数字字符串则转换成相应的数字，如果是空字符串则转换成0，如果包含十六进制则转换成十进制整数，其他的转换成NaN，null转换成0，undefined转换成NaN,如果是对象，先调用valueOf()方法，然后依照前面的转换规则，如果转换的是NaN，则调用toStirng()方法。<br>parseInt()只转换带数字的字符串，不转换true,false,函数,等。 从左到右一个一个转换，遇到不是数字就停止，但是可以认加减号，前面空格会忽略，在数字类型中要是 数字中间有空格会报错，但是在字符串中，遇到空格就截断停止转换。局部转换。可以第二个参数。<br>parseFloat()只转换带数字的字符串或者数字，认识一位小数点，比如’12.3.4’转换成12.3；parseFloat()只应用于解析十进制数字,所以只有一个参数。<br>3.4.5、String数据类型<br>用双引号或者单引号保卫。字符串有长度的，但是这个长度只能读取，不能够重新改写。把其他的数据类型改成字符串的方法，第一种是toString(),多数情况下不要括号里面不要参数，但是如果转换数值的toString()方法时，可以填写2或者8、16等进制数。<br>null和undefined是没有toString()的，所以有第二种方法，String(),能够把任何的数据类型转换成字符串，转换规则是：如果有toSting()，就用这个方法，如果是null和undefined，则返回”null”、”undefined”。<br>3.4.6、Object数据类型<br>创建对象的两种方式 var o={};或者 var o=new Object();<br>Object每个实例有下列属性和方法：constructor,保存用于创建当前对象函数。hasOwnProperty(),检查这个属性是否在当前实例中，括号里面的参数必须是字符串。</p>
 <p><strong>3.5、操作符</strong><br>3.5.1、一元操作符（发生隐士转换）<br>1、递增和递减<br>分为前置和后置，前置的意思是位于操作变量前执行，后置表示的是操作变量后执行。比如<br>var n1=2,n2=20,n3=–n1+n2;      //21  var n4=n1+n2     //21<br>var n1=2,n2=20,n3=n1– + n2;   //22  var n4=n1+n2     //21<br>递增和递减能够把任何数据类型转换成数值。规则是如果是数字字符串则转换成相应的数字然后再加1，如果是非数字字符串，怎么返回NaN，如果是ture则变成1再加1.如果是fasle则是0然后加1。如果是对象，则先用valueOf()，转换成相应的值然后操作，如果转换的是NaN则用toString();</p>
 </script></li></ul>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -333,228 +343,69 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/11/09/你不知道的数组/" rel="next" title="你不知道的数组">
+                <i class="fa fa-chevron-left"></i> 你不知道的数组
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/11/09/你不知道的数组/" itemprop="url">
-                  你不知道的数组
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-09T23:18:07+08:00" content="2016-11-09">
-              2016-11-09
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/11/09/你不知道的数组/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/09/你不知道的数组/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>#数组不知道的事情。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
+
+    <div class="post-spread">
       
+        <div class="ds-share flat" data-thread-key="2016/11/15/JavaScript基础核心（一）/"
+     data-title="JavaScript基础核心（一）"
+     data-content=""
+     data-url="http://yoursite.com/2016/11/15/JavaScript基础核心（一）/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
-  
-  
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/09/对象/" itemprop="url">
-                  对象
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-09T18:30:32+08:00" content="2016-11-09">
-              2016-11-09
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/11/09/对象/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/09/对象/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#万物都对象</p>
-
-          
-        
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/15/JavaScript基础核心（一）/"
+           data-title="JavaScript基础核心（一）" data-url="http://yoursite.com/2016/11/15/JavaScript基础核心（一）/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -574,8 +425,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="data:image/jpeg;base64,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"
@@ -611,6 +471,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、JavaScript由三部分组成："><span class="nav-number">1.</span> <span class="nav-text">一、JavaScript由三部分组成：</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -714,6 +585,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
